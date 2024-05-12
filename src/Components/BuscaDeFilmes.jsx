@@ -12,7 +12,7 @@ function BuscaDeFilmes() {
       // Codifica a consulta para que ela possa ser usada em uma URL
       const encodedQuery = encodeURIComponent(query);
       // Faz uma requisição à API do OMDB para buscar filmes com base na consulta
-      const response = await fetch(`http://www.omdbapi.com/?s=${encodedQuery}&apikey=46ad26a4`);
+      const response = await fetch(`https://www.omdbapi.com/?s=${encodedQuery}&apikey=46ad26a4`);
       const data = await response.json(); // Converte a resposta em JSON
       // Verifica se a resposta da API é bem-sucedida
       if (data.Response === 'True') {
